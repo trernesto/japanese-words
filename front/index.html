@@ -57,158 +57,162 @@
 
 
     <body>
+        <div class = "center">
+            <style type="text/css">
+              fieldset.inline {
+                display: inline;
+              }
+            </style>
 
-        <style type="text/css">
-          fieldset.inline {
-            display: inline;
-          }
-        </style>
+            <div class = "center">
+            <fieldset class="inline">
+                <div>
+                    <input type="checkbox" id="lesson_1" name="lessons" value="1" />
+                    <label for="1">1</label>
+                </div>
 
-        <fieldset class="inline">
-            <div>
-                <input type="checkbox" id="lesson_1" name="lessons" value="1" />
-                <label for="1">1</label>
+                <div>
+                    <input type="checkbox" id="lesson_2" name="lessons" value="2" />
+                    <label for="2">2</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="lesson_3" name="lessons" value="3" />
+                    <label for="3">3</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="lesson_4" name="lessons" value="4" />
+                    <label for="4">4</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="lesson_5" name="lessons" value="5" />
+                    <label for="5">5</label>
+                </div>
+            </fieldset>
+
+            <fieldset class="inline">
+                <div>
+                    <input type="checkbox" id="lesson_6" name="lessons" value="6" />
+                    <label for="6">6</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="lesson_7" name="lessons" value="7" />
+                    <label for="7">7</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="lesson_8" name="lessons" value="8" />
+                    <label for="8">8</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="lesson_9" name="lessons" value="9" />
+                    <label for="9">9</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="lesson_10" name="lessons" value="10" />
+                    <label for="10">10</label>
+                </div>
+            </fieldset>
+
+            <fieldset class="inline">
+                <div>
+                    <input type="checkbox" id="lesson_11" name="lessons" value="11" />
+                    <label for="11">11</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="lesson_12" name="lessons" value="12" />
+                    <label for="12">12</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="lesson_13" name="lessons" value="13" />
+                    <label for="13">13</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="lesson_14" name="lessons" value="14" />
+                    <label for="14">14</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="lesson_15" name="lessons" value="15" />
+                    <label for="15">15</label>
+                </div>
+            </fieldset>
+
+            <fieldset class="inline">
+                <div>
+                    <input type="checkbox" id="lesson_16" name="lessons" value="16" />
+                    <label for="16">16</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="lesson_17" name="lessons" value="17" />
+                    <label for="17">17</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="lesson_18" name="lessons" value="18" />
+                    <label for="18">18</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="lesson_19" name="lessons" value="19" />
+                    <label for="19">19</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="lesson_20" name="lessons" value="20" />
+                    <label for="20">20</label>
+                </div>
+            </fieldset>
+
+            <fieldset class="inline">
+                <div>
+                    <input type="checkbox" id="lesson_21" name="lessons" value="21" />
+                    <label for="21">21</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="lesson_22" name="lessons" value="22" />
+                    <label for="22">22</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="lesson_23" name="lessons" value="23" />
+                    <label for="23">23</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="lesson_24" name="lessons" value="24" />
+                    <label for="24">24</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="lesson_25" name="lessons" value="25" />
+                    <label for="25">25</label>
+                </div>
+            </fieldset>
             </div>
 
             <div>
-                <input type="checkbox" id="lesson_2" name="lessons" value="2" />
-                <label for="2">2</label>
+                <button class = "btn btn_submit" onclick="getSelected()">Submit</button>
             </div>
 
-            <div>
-                <input type="checkbox" id="lesson_3" name="lessons" value="3" />
-                <label for="3">3</label>
+            <div class = "word_div">
+                <button class="btn btn_prev" onmousedown="prevWord()">Previous</button>      
+                <label id="focus_word">...</label>
+                <button class = "btn" onclick="showTranslate()">Translate</button>
+                <label id="translate_word">...</label>
+                <button class="btn btn_next" onmousedown="nextWord()">Next</button>
             </div>
-
-            <div>
-                <input type="checkbox" id="lesson_4" name="lessons" value="4" />
-                <label for="4">4</label>
-            </div>
-
-            <div>
-                <input type="checkbox" id="lesson_5" name="lessons" value="5" />
-                <label for="5">5</label>
-            </div>
-        </fieldset>
-
-        <fieldset class="inline">
-            <div>
-                <input type="checkbox" id="lesson_6" name="lessons" value="6" />
-                <label for="6">6</label>
-            </div>
-
-            <div>
-                <input type="checkbox" id="lesson_7" name="lessons" value="7" />
-                <label for="7">7</label>
-            </div>
-
-            <div>
-                <input type="checkbox" id="lesson_8" name="lessons" value="8" />
-                <label for="8">8</label>
-            </div>
-
-            <div>
-                <input type="checkbox" id="lesson_9" name="lessons" value="9" />
-                <label for="9">9</label>
-            </div>
-
-            <div>
-                <input type="checkbox" id="lesson_10" name="lessons" value="10" />
-                <label for="10">10</label>
-            </div>
-        </fieldset>
-
-        <fieldset class="inline">
-            <div>
-                <input type="checkbox" id="lesson_11" name="lessons" value="11" />
-                <label for="11">11</label>
-            </div>
-
-            <div>
-                <input type="checkbox" id="lesson_12" name="lessons" value="12" />
-                <label for="12">12</label>
-            </div>
-
-            <div>
-                <input type="checkbox" id="lesson_13" name="lessons" value="13" />
-                <label for="13">13</label>
-            </div>
-
-            <div>
-                <input type="checkbox" id="lesson_14" name="lessons" value="14" />
-                <label for="14">14</label>
-            </div>
-
-            <div>
-                <input type="checkbox" id="lesson_15" name="lessons" value="15" />
-                <label for="15">15</label>
-            </div>
-        </fieldset>
-
-        <fieldset class="inline">
-            <div>
-                <input type="checkbox" id="lesson_16" name="lessons" value="16" />
-                <label for="16">16</label>
-            </div>
-
-            <div>
-                <input type="checkbox" id="lesson_17" name="lessons" value="17" />
-                <label for="17">17</label>
-            </div>
-
-            <div>
-                <input type="checkbox" id="lesson_18" name="lessons" value="18" />
-                <label for="18">18</label>
-            </div>
-
-            <div>
-                <input type="checkbox" id="lesson_19" name="lessons" value="19" />
-                <label for="19">19</label>
-            </div>
-
-            <div>
-                <input type="checkbox" id="lesson_20" name="lessons" value="20" />
-                <label for="20">20</label>
-            </div>
-        </fieldset>
-
-        <fieldset class="inline">
-            <div>
-                <input type="checkbox" id="lesson_21" name="lessons" value="21" />
-                <label for="21">21</label>
-            </div>
-
-            <div>
-                <input type="checkbox" id="lesson_22" name="lessons" value="22" />
-                <label for="22">22</label>
-            </div>
-
-            <div>
-                <input type="checkbox" id="lesson_23" name="lessons" value="23" />
-                <label for="23">23</label>
-            </div>
-
-            <div>
-                <input type="checkbox" id="lesson_24" name="lessons" value="24" />
-                <label for="24">24</label>
-            </div>
-
-            <div>
-                <input type="checkbox" id="lesson_25" name="lessons" value="25" />
-                <label for="25">25</label>
-            </div>
-        </fieldset>
-
-        <button onclick="showTranslate()">Translate</button>
-        <button onclick="getSelected()">Submit</button>
-
-        <div id="prev_next">
-            <button id="prevButton" onmousedown="prevWord()">Previous</button>      
-            <label id="focus_word">...</label>
-            <button id="nextButton" onmousedown="nextWord()">Next</button>
-            <label id="translate_word">...</label>
         </div>
-
     </body>
 
 </html>
